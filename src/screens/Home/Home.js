@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client'
 import React from 'react'
-import { SafeAreaView, View } from 'react-native'
+import { View } from 'react-native'
 import KeyboardSpacer from 'react-native-keyboard-spacer'
 import { Loading } from '../../components/Loading/Loading'
 import { ScreenContainer } from '../../components/ScreenContainer/ScreenContainer'

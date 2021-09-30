@@ -1,15 +1,14 @@
-import React from 'react'
-import { View, Text} from 'react-native'
-import { useQuery, useMutation } from '@apollo/client'
+import { useMutation } from '@apollo/client';
+import React from 'react';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 
-import { MARK_TASK_AS_DONE } from '../../graphqls/mutations/markTaskAsDone'
+import { MARK_TASK_AS_DONE } from '../../graphqls/mutations/markTaskAsDone';
 import { MARK_TASK_AS_UN_DONE } from '../../graphqls/mutations/markTaskAsUnDone';
-import { Container } from './styled'
 import { Colors } from '../../lib/colors';
+import { Container } from './styled';
 
 export const SingleTask = (props) => {
-  const { task: {id, title, done} } = props
+  const { task: { id, title, done } } = props
   const [markTaskAsDone] = useMutation(MARK_TASK_AS_DONE);
   const [markTaskAsUnDone] = useMutation(MARK_TASK_AS_UN_DONE);
 
