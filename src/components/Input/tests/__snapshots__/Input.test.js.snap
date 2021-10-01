@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default input value 1`] = `
+<TextInput
+  onChangeText={[MockFunction]}
+  placeholder="Placeholder"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F2F5FC",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 16,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 16,
+      },
+    ]
+  }
+  value="Default Value"
+/>
+`;
+
+exports[`input value change 1`] = `
+<TextInput
+  onChangeText={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          "new content",
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  placeholder="Placeholder"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#F2F5FC",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 16,
+        "paddingLeft": 12,
+        "paddingRight": 12,
+        "paddingTop": 16,
+      },
+    ]
+  }
+  value=""
+/>
+`;
